@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .main_layout {
+        @apply max-w-[450px] w-full mx-auto h-screen !bg-no-repeat
+    }
+
+    .bottom_card {
+        @apply py-4 px-5 bg-white rounded-tl-3xl rounded-tr-3xl max-w-[450px] w-full min-h-[520px] h-full overflow-y-hidden
+    }
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.home {
+    background-image: url(assets/home-page-1-bg.svg);
+    /* background-repeat: no-repeat; */
+}
+
+.rating {
+    background-image: url(assets/rating_bg.svg);
+    /* background-repeat: no-repeat; */
+}
+
+.spintowin {
+    background-image: url(assets/spinwheelbg.svg);
+    /* background-repeat: no-repeat; */
+}
+
+.competition {
+    background-image: url(assets/competitionbg.svg);
+    /* background-repeat: no-repeat; */
+}
+
+.bhdLno {
+
+    max-width: 190px !important;
+    max-height: 190px !important;
+}
+
+.cIKpxU {
+    display: none !important;
+}
+
+.wheel_ping {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    background-image: url(assets/pin_bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    top: -15px;
+}
+
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 18px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8a8a8a;
+    border-radius: 18px;
+}
