@@ -24,7 +24,8 @@ const Layout = () => {
   // }, [id]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/v1/restaurants/${id}`)
+    // fetch(`http://localhost:5000/v1/restaurants/${id}`)
+    fetch(`https://unizz-server-2c5i.onrender.com/v1/restaurants/${id}`)
       .then((res) => res.json())
       .then((data) => {
         if (Object.keys(data).length !== 0) {
